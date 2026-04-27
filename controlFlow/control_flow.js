@@ -56,4 +56,4 @@ If the person is a Subscriber, they are authorized to have partial access to fac
 If the person is a Non-Subscriber, they need to enroll or at least subscribe first to avail this facility.
 
 You need to communicate with the user by printing a message indicating whether that person is eligible to avail which type of services.
-/*
+*/
