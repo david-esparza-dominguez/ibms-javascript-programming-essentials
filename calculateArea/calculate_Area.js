@@ -7,8 +7,4 @@ function calculateArea() {
 
 let area = length * width;
  document.getElementById('result').innerText = `The area of the rectangle is: ${area}`;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f051130 (feat: Add grocery tracker calculator)
