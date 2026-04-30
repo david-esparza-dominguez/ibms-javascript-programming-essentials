@@ -1,0 +1,72 @@
+{
+  "articles": [
+    {
+      "title": "Breaking: New Technology Revolutionizes Industry",
+      "description": "A groundbreaking technology has emerged that promises to transform the way we work and communicate. Industry experts believe this innovation will create thousands of new jobs.",
+      "date": "April 28, 2026",
+      "source": "Tech Daily",
+      "key_points": [
+        "New technology increases productivity by 40%",
+        "Expected to save companies millions in operational costs",
+        "Already adopted by major Fortune 500 companies"
+      ],
+      "impact": [
+        "Job creation in tech sector",
+        "Improved efficiency across industries",
+        "Enhanced sustainability practices",
+        "Better work-life balance for employees"
+      ]
+    },
+    {
+      "title": "Global Markets Rally on Economic Growth",
+      "description": "Stock markets across the globe experienced significant gains today as investors respond positively to latest economic growth data. Analysts predict continued upward momentum.",
+      "date": "April 27, 2026",
+      "source": "Finance Weekly",
+      "key_points": [
+        "S&P 500 reaches new all-time high",
+        "International markets show synchronized growth",
+        "Consumer confidence at 10-year peak"
+      ],
+      "impact": [
+        "Increased investment opportunities",
+        "Improved consumer spending",
+        "Job market strengthening",
+        "Higher retirement account values"
+      ]
+    },
+    {
+      "title": "Climate Initiative Gains Momentum Globally",
+      "description": "Nations worldwide are accelerating their climate action plans with new commitments to reduce carbon emissions. The initiative aims to achieve net-zero by 2050.",
+      "date": "April 26, 2026",
+      "source": "Environmental News",
+      "key_points": [
+        "150+ countries commit to new emission targets",
+        "$2 trillion allocated to green energy projects",
+        "Renewable energy capacity projected to double by 2030"
+      ],
+      "impact": [
+        "Reduced greenhouse gas emissions",
+        "Creation of green jobs",
+        "Cleaner air and water",
+        "Healthier communities"
+      ]
+    },
+    {
+      "title": "Educational Innovation Transforms Learning Experience",
+      "description": "Educational institutions are adopting AI-powered learning platforms that personalize education for each student. Early results show improved student performance and engagement.",
+      "date": "April 25, 2026",
+      "source": "Education Today",
+      "key_points": [
+        "AI tutors provide 24/7 personalized learning",
+        "Student engagement increases by 35%",
+        "Educational equity improves significantly"
+      ],
+      "impact": [
+        "Better academic outcomes",
+        "Increased access to quality education",
+        "Reduced educational disparities",
+        "Enhanced critical thinking skills"
+      ]
+    }
+  ]
+}
