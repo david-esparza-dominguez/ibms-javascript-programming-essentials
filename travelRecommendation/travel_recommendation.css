@@ -1,7 +1,19 @@
-/* Background image for all pages */
-
 body {
-    background-image: url('travel-recommendation-background.png')
+    background-image: url('travel-recommendation-background.png');
+    font-family: Arial, sans-serif;
+    color: snow
+}
+
+button {
+    padding: 7px 15px;
+    background-color: seagreen;
+    color: snow;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
 }
 
 /* Basic CSS for the navigation bar */
