@@ -1,0 +1,39 @@
+/* Background image for all pages */
+
+body {
+    background-image: url('travel-recommendation-background.png')
+}
+
+/* Basic CSS for the navigation bar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #000777;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    color: #ffffff;
+}
+  
+nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
