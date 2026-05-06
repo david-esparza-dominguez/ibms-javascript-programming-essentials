@@ -116,6 +116,22 @@ body {
     border-radius: 30px;
 
     cursor: pointer;
+
+    background-color: #0d9488;
+    
+    color: snow;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.search-btn:hover,
+.clear-btn:hover,
+.cta-btn:hover {
+    background-color: #0f766e;
+
+    transform: translateY(-2px);
 }
 
 
@@ -187,9 +203,17 @@ body {
 
     border-radius: 40px;
 
+    background-color: #0d9488;
+    
+    color: snow;
+
     font-size: 1rem;
 
     cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
 }
 
 
@@ -281,4 +305,146 @@ body {
     width: 28px;
 
     height: 28px;
+}
+
+/* Contact us */
+
+.contact-layout {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 80px;
+
+    padding:
+        13px
+        120px
+        13px
+        200px;
+}
+
+/* left side content */
+
+.contact-content {
+
+    flex: 1;
+
+    color: snow;
+}
+
+.contact-content h1 {
+
+    font-size: 5rem;
+
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+
+    font-size: 1.5rem;
+}
+
+.contact-form-container {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.contact-form {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    background-color: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(8px);
+}
+
+.contact-form label {
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 12px;
+
+    background-color: rgba(255,255,255,0.08);
+
+    color: white;
+
+    font-size: 1rem;
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+
+    color: rgba(255,255,255,0.7);
+}
+
+.contact-form textarea {
+
+    resize: vertical;
+}
+
+.submit-btn {
+
+    margin-top: 10px;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background-color: #0d9488;
+
+    color: white;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.submit-btn:hover {
+
+    background-color: #0f766e;
+
+    transform: translateY(-2px);
 }
