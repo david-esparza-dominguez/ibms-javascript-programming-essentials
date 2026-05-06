@@ -19,6 +19,17 @@ searchButton.addEventListener("click", async () => {
         .toLowerCase()
         .trim();
 
+    const data = await fetchRecommendations();
+
+    let matchedResults = [];
+
+    if (
+        searchValue === "beach" ||
+        searchValue === "beaches"
+    ) {
+        matchedResults = data.beaches;
+    }
+
 });
 
 fetch("./travel_recommendation_api.json")
