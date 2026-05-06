@@ -13,6 +13,26 @@ async function fetchRecommendations() {
     return data;
 }
 
+function createRecommendationCard(place) {
+
+    return `
+        <div class="recommendation-card">
+            <img
+                src="${place.imageUrl}"
+                alt="${place.name}"
+            >
+
+            <div class="recommendation-content">
+
+                <h3>${place.name}</h3>
+
+                <p>${place.description}</p>
+
+            </div>
+        </div>
+    `;
+}
+
 searchButton.addEventListener("click", async () => {
 
     const searchValue = searchInput.value
