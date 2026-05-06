@@ -2,9 +2,7 @@ const searchButton = document.getElementById("btnSearch");
 
 const searchInput = document.getElementById("travelSearchInput");
 
-const resultsContainer = document.getElementById
-
-
+const resultsContainer = document.getElementById("recommendationResults");
 
 fetch("./travel_recommendation_api.json")
 
