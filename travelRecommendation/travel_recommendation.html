@@ -1,45 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
     <title> Travel Wanderly </title>
     <link rel="stylesheet" href="./travel_recommendation.css" />
 </head>
-
 <body>
-    <nav>
-
-        <div class="logo"> Travel Wanderly </div>
-
-        <ul>
-
-            <li> <a href="./travel_recommendation.html" id="home" > Home </a> </li> 
-            <li> <a href="./about.html" id="about" > About us </a>  </li>
-            <li> <a href="./contact.html" id="contact" > Contact us </a> </li>
-            <li> <input type="text" id="travelSearchInput" placeholder="Enter a destination or keyword" /> </li>
-            <li> <button id="btnSearch"> Search </button> </li>
-            <li> <button id="btnClear"> Clear </button> </li>
-
+    <nav class="navbar">
+        <div class="logo">Travel Wanderly</div>
+        <ul class="nav-links">
+            <li><a href="./travel_recommendation.html" id="home">Home</a></li> 
+            <li><a href="./about.html" id="about">About us</a></li>
+            <li><a href="./contact.html" id="contact">Contact us</a></li>
+            <li><input type="text" id="travelSearchInput" placeholder="Enter a destination"/></li>
+            <li><button id="btnSearch" class="action-button">Search</button></li>
+            <li><button id="btnClear" class="action-button">Clear</button></li>
         </ul>
-
     </nav>
-
     <section class="hero">
-
         <div class="hero-content">
-
-
-
+            <h1>DISCOVER YOUR NEXT ADVENTURE</h1>
+            <p>Personalized travel recommendations for unforgettable experiences.</p>
+            <button id="btnBookNow class="cta-button">Explore Destinations</button>
         </div>
-
     </section>
-
-    <h2> DISCOVER YOUR NEXT ADVENTURE  </h2>
-
-    <p> Personalized travel recommendations for unforgettable experiences. </p>
-
-    <button id="btnBookNow"> Explore Destinations </button>
-
 </body>
-
 </html>
