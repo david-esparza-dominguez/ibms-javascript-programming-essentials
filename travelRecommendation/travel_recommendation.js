@@ -1,5 +1,7 @@
 const searchButton = document.getElementById("btnSearch");
 
+const clearButton = document.getElementById("btnClear");
+
 const searchInput = document.getElementById("travelSearchInput");
 
 const resultsContainer = document.getElementById("recommendationResults");
@@ -44,6 +46,13 @@ function displayRecommendations(recommendations) {
     });
 }
 
+function clearResults() {
+
+    searchInput.value = "";
+
+    resultsContainer.innerHTML = "";
+}
+
 searchButton.addEventListener("click", async () => {
 
     const searchValue = searchInput.value
@@ -80,6 +89,11 @@ searchButton.addEventListener("click", async () => {
 
     displayRecommendations(matchedResults);
 
+});
+
+clearButton.addEventListener("click", () => {
+
+    clearResults();
 });
 
 fetch("./travel_recommendation_api.json")
