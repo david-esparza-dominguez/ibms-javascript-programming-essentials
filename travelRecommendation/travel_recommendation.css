@@ -17,7 +17,7 @@ body {
 
   background-color: rgba(15, 23, 42, 0.72);
   backdrop-filter: blur(6px);
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +45,7 @@ nav a {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 14px;
 
   list-style: none;
 }
@@ -56,20 +56,50 @@ nav a {
 }
 
 .nav-links input {
-  padding: 8px;
-  border-radius: 4px;
+  width: 260px;
+
+  padding: 10px 14px;
+
   border: none;
+  border-radius: 999px;
+
+  outline: none;
+
+  font-size: 0.95rem;
+}
+
+.nav-links input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
 }
 
 .action-btn {
-  padding: 8px 14px;
+  padding: 10px 18px;
 
   border: none;
-  border-radius: 4px;
+  border-radius: 999px;
 
   cursor: pointer;
+
+  font-weight: 600;
+
+  transition: all 0.2s ease;
 }
 
+.action-btn:hover {
+  transform: translateY(-1px);
+
+  opacity: 0.92;
+}
+
+.btn-search {
+  background-color: teal;
+  color: white;
+}
+
+.btn-clear {
+  background-color: white;
+  color: #1f2937;
+}
 
 /* =========================
    HERO SECTION
