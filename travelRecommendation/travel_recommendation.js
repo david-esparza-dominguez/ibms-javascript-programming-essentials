@@ -6,6 +6,15 @@ const searchInput = document.getElementById("travelSearchInput");
 
 const resultsContainer = document.getElementById("recommendationResults");
 
+const countryTimeZones = {
+
+    australia: "Australia/Sydney",
+
+    japan: "Asia/Tokyo",
+
+    brazil: "America/Sao_Paulo"
+};
+
 async function fetchRecommendations() {
 
     const response = await fetch("./travel_recommendation_api.json");
@@ -35,15 +44,64 @@ function createRecommendationCard(place) {
     `;
 }
 
-function displayRecommendations(recommendations) {
+function displayRecommendations(
+    recommendations, 
+    currentTime = ""
+) {
 
     resultsContainer.innerHTML = "";
+
+    if (currentTime !== "") {
+        resultsContainer.innerHTML += `
+            <div class="time-display">
+
+                Current Time:
+                ${currentTime}
+            
+            </div>
+        `;
+    }
 
     recommendations.forEach((place) => {
 
         resultsContainer.innerHTML +=
             createRecommendationCard(place);
     });
+}
+
+function getCountryTime(countryName) {
+
+    const timeZone =
+        countryTimeZones[countryName];
+
+
+
+    if (!timeZone) {
+
+        return "";
+    }
+
+
+
+    const options = {
+
+        timeZone: timeZone,
+
+        hour12: true,
+
+        hour: "numeric",
+
+        minute: "numeric",
+
+        second: "numeric"
+    };
+
+
+
+    return new Date().toLocaleTimeString(
+        "en-US",
+        options
+    );
 }
 
 function clearResults() {
@@ -78,14 +136,33 @@ searchButton.addEventListener("click", async () => {
     }
 
     else {
-        data.countries.forEach((country) => {
-            if (
-                country.name.toLowerCase() === searchValue
-            ) {
-                matchedResults = country.cities;
-            }
-        });
-    }
+
+    data.countries.forEach((country) => {
+
+        if (
+
+            country.name.toLowerCase()
+            === searchValue
+
+        ) {
+
+            matchedResults =
+                country.cities;
+
+
+
+            const currentTime =
+                getCountryTime(searchValue);
+
+
+
+            console.log(
+                "Current Time:",
+                currentTime
+            );
+        }
+    });
+}
 
     displayRecommendations(matchedResults);
 
