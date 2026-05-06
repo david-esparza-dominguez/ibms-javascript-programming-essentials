@@ -13,6 +13,10 @@ async function fetchRecommendations() {
     return data;
 }
 
+searchButton.addEventListener("click", async () => {
+
+});
+
 fetch("./travel_recommendation_api.json")
 
     .then((response) => {
