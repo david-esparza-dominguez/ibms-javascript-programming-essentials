@@ -47,6 +47,8 @@ searchButton.addEventListener("click", async () => {
         });
     }
 
+    console.log(matchedResults);
+
 });
 
 fetch("./travel_recommendation_api.json")
