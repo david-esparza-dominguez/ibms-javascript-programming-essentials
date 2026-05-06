@@ -4,6 +4,15 @@ const searchInput = document.getElementById("travelSearchInput");
 
 const resultsContainer = document.getElementById("recommendationResults");
 
+async function fetchRecommendations() {
+
+    const response = await fetch("./travel_recommendation_api.json");
+
+    const data = await response.json();
+
+    return data;
+}
+
 fetch("./travel_recommendation_api.json")
 
     .then((response) => {
