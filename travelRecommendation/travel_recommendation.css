@@ -49,3 +49,37 @@ nav a {
     color: #ffffff;
     font-weight: bold;
 }
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+li p {
+  margin: 4px 0 0;
+  color: #555;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+}
+
+.team-list li {
+  margin-bottom: 24px;
+}
+
+.team-list h3 {
+  margin: 0;
+}
+
+.role {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 6px;
+}
