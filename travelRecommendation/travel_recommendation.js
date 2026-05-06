@@ -1,0 +1,1 @@
+fetch("./travel_recommendation_api.json")
