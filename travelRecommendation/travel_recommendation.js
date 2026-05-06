@@ -151,9 +151,7 @@ searchButton.addEventListener("click", async () => {
             matchedResults =
                 country.cities;
 
-            let currentTime = "";
-
-            const currentTime =
+            currentTime =
                 getCountryTime(searchValue);
 
 
