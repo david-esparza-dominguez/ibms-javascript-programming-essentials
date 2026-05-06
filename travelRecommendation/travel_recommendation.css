@@ -19,39 +19,49 @@ body {
   backdrop-filter: blur(6px);
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  padding: 20px 60px;
 
   position: fixed;
   width: 100%;
-
+  padding: 20px 60px;
   z-index: 1000;
 }
 
-nav a {
-  color: white;
+/* LOGO */
+.logo {
+  flex: 1;
+
+  color: snow;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: snow;
   text-decoration: none;
   font-weight: 500;
 }
 
 .logo {
-  color: white;
+  color: snow;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 .nav-links {
+  flex: 1;
+
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 14px;
+
+  gap: 40px;
 
   list-style: none;
 }
 
 .nav-links a {
-  color: white;
+  color: snow;
   text-decoration: none;
 }
 
@@ -93,7 +103,7 @@ nav a {
 
 .search-btn {
   background-color: teal;
-  color: white;
+  color: snow;
 
   border: none;
 
@@ -108,7 +118,7 @@ nav a {
 
 .clear-btn {
   background-color: teal;
-  color: white;
+  color: snow;
 
   border: none;
 
@@ -122,10 +132,11 @@ nav a {
 }
 
 .search-container {
+  
   display: flex;
   align-items: center;
 
-  background-color: white;
+  background-color: snow;
 
   padding: 8px 10px;
 
@@ -189,7 +200,7 @@ nav a {
 
   margin-left: 80px;
 
-  color: white;
+  color: snow;
 }
 
 .hero-content h1 {
@@ -207,7 +218,7 @@ nav a {
 
 .cta-btn {
   background-color: teal;
-  color: white;
+  color: snow;
 
   padding: 14px 24px;
 
