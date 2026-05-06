@@ -37,6 +37,16 @@ searchButton.addEventListener("click", async () => {
         matchedResults = data.temples;
     }
 
+    else {
+        data.countries.forEach((country) => {
+            if (
+                country.name.toLowerCase() === searchValue
+            ) {
+                matchedResults = country.cities;
+            }
+        });
+    }
+
 });
 
 fetch("./travel_recommendation_api.json")
