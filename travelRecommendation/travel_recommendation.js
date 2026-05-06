@@ -33,6 +33,17 @@ function createRecommendationCard(place) {
     `;
 }
 
+function displayRecommendations(recommendations) {
+
+    resultsContainer.innerHTML = "";
+
+    recommendations.forEach((place) => {
+
+        resultsContainer.innerHTML +=
+            createRecommendationCard(place);
+    });
+}
+
 searchButton.addEventListener("click", async () => {
 
     const searchValue = searchInput.value
@@ -67,7 +78,7 @@ searchButton.addEventListener("click", async () => {
         });
     }
 
-    console.log(matchedResults);
+    displayRecommendations(matchedResults);
 
 });
 
