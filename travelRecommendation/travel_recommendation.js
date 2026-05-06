@@ -15,6 +15,10 @@ async function fetchRecommendations() {
 
 searchButton.addEventListener("click", async () => {
 
+    const searchValue = searchInput.value
+        .toLowerCase()
+        .trim();
+
 });
 
 fetch("./travel_recommendation_api.json")
