@@ -8,12 +8,35 @@
     <nav class="navbar">
         <div class="logo">Travel Wanderly</div>
         <ul class="nav-links">
-            <li><a href="./travel_recommendation.html" id="home">Home</a></li> 
-            <li><a href="./about.html" id="about">About us</a></li>
-            <li><a href="./contact.html" id="contact">Contact us</a></li>
-            <li><input type="text" id="travelSearchInput" placeholder="Enter a destination"/></li>
-            <li><button id="btnSearch" class="action-btn btn-search">Search</button></li>
-            <li><button id="btnClear" class="action-btn btn-clear">Clear</button></li>
+            <li>
+                <a href="./travel_recommendation.html" id="home">
+                    Home
+                </a>
+            </li> 
+            <li>
+                <a href="./about.html" id="about">
+                    About us
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html" id="contact">
+                    Contact us
+                </a>
+            </li>
+            <li class="search-container">
+                <input
+                    type="text"
+                    id="travelSearchInput"
+                    placeholder="Enter a destination or keyword"
+                />
+                <span class="search-icon">🔍</span>
+                <button id="btnSearch" class="search-btn">
+                    Search
+                </button>
+                <button id="btnClear" class="clear-btn">
+                    Clear
+                </button>
+            </li>
         </ul>
     </nav>
     <section class="hero">

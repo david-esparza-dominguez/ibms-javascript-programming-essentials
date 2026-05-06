@@ -91,14 +91,60 @@ nav a {
   opacity: 0.92;
 }
 
-.btn-search {
+.search-btn {
   background-color: teal;
   color: white;
+
+  border: none;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  font-weight: 600;
 }
 
-.btn-clear {
+.clear-btn {
+  background-color: teal;
+  color: white;
+
+  border: none;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+
   background-color: white;
-  color: #1f2937;
+
+  padding: 8px 10px;
+
+  border-radius: 999px;
+
+  gap: 10px;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+
+  width: 260px;
+
+  font-size: 1rem;
+}
+
+.search-icon {
+  font-size: 1.2rem;
 }
 
 /* =========================
