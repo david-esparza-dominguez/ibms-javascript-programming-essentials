@@ -5,23 +5,55 @@
     <link rel="stylesheet" href="./travel_recommendation.css"/>
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="logo">Travel Wanderly</div>
-        <ul>
-            <li> <a href="./travel_recommendation.html" id="home" > Home </a> </li> 
-            <li> <a href="./about.html" id="about" > About us </a>  </li>
-            <li> <a href="./contact.html" id="contact" > Contact us </a> </li>
-            <li> <input type="text" id="travelSearchInput" placeholder="Enter a destination or keyword" /> </li>
-            <li> <button id="btnSearch"> Search </button> </li>
-            <li> <button id="btnClear"> Clear </button> </li>
+        <ul class="nav-links">
+            <li>
+                <a href="./travel_recommendation.html" id="home">
+                    Home
+                </a>
+            </li> 
+            <li>
+                <a href="./about.html" id="about">
+                    About us
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html" id="contact">
+                    Contact us
+                </a>
+            </li>
         </ul>
+        <div class="search-container">
+            <input
+                type="text"
+                id="travelSearchInput"
+                placeholder="Enter a destination or keyword"
+            />
+            <span class="search-icon">🔍</span>
+            <button id="btnSearch" class="search-btn">
+                Search
+            </button>
+            <button id="btnClear" class="clear-btn">
+                Clear
+            </button>
+        </div>
     </nav>
-    <h1>About Us</h1>
-    <p>
-        We believe travel should feel personal, not overwhelming.<br>
-        Our platform was built to simplify how people discover destinations by turning scattered information into clear, tailored recommendations. Whether you're planning a weekend escape or a long-term adventure, we help you cut through the noise and focus on what actually matters—your interests, your budget, and your time.<br>
-        By combining curated insights with intuitive technology, we make it easier to explore new places with confidence. No endless tabs. No guesswork. Just smarter travel decisions.<br>
-    </p>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>About Us</h1>
+            <p>
+                We believe travel should feel personal, not overwhelming.<br>
+                Our platform was built to simplify how people discover destinations by turning scattered information into clear, tailored recommendations. Whether you're planning a weekend escape or a long-term adventure, we help you cut through the noise and focus on what actually matters—your interests, your budget, and your time.<br>
+                By combining curated insights with intuitive technology, we make it easier to explore new places with confidence. No endless tabs. No guesswork. Just smarter travel decisions.<br>
+            </p>
+            <button id="btnBookNow" class="cta-btn">Explore Destinations</button>
+        </div>
+    </section>
+
+    
+    
     <h2>Our Team</h2>
     <p>
         We’re a small, focused team of builders, thinkers, and travelers who care about creating meaningful digital experiences.
@@ -54,5 +86,23 @@
             <p>Specializes in destination insights and travel trends.</p>
         </li>
     </ul>
+    <div class="social-sidebar">
+
+        <a href="#">
+        <img src="./icons/x.svg" alt="X">
+        </a>
+
+        <a href="#">
+            <img src="./icons/facebook.svg" alt="Facebook">
+        </a>
+
+        <a href="#">
+            <img src="./icons/instagram.svg" alt="Instagram">
+        </a>
+
+        <a href="#">
+            <img src="./icons/youtube.svg" alt="YouTube">
+        </a>
+    </div>
 </body>
 </html>
