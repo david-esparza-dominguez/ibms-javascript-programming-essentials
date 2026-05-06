@@ -30,6 +30,13 @@ searchButton.addEventListener("click", async () => {
         matchedResults = data.beaches;
     }
 
+    else if (
+        searchValue === "temple" ||
+        searchValue === "temples"
+    ) {
+        matchedResults = data.temples;
+    }
+
 });
 
 fetch("./travel_recommendation_api.json")
