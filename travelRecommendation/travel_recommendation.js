@@ -121,6 +121,8 @@ searchButton.addEventListener("click", async () => {
 
     let matchedResults = [];
 
+    let currentTime = "";
+
     if (
         searchValue === "beach" ||
         searchValue === "beaches"
@@ -149,7 +151,7 @@ searchButton.addEventListener("click", async () => {
             matchedResults =
                 country.cities;
 
-
+            let currentTime = "";
 
             const currentTime =
                 getCountryTime(searchValue);
@@ -164,7 +166,10 @@ searchButton.addEventListener("click", async () => {
     });
 }
 
-    displayRecommendations(matchedResults);
+    displayRecommendations(
+    matchedResults,
+    currentTime
+    );
 
 });
 
